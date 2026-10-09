@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.blocks{
+    width: 80px;
+    height: 80px;
+    margin: 2px;
+    padding: 3px;
+    color: aqua;
+    border: 3px rgb(198, 71, 71) solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#white{
+    background-color: rgb(213, 205, 205);
+    color:black;
+    font-size:20px;
+}
+#grey{
+    background-color: rgb(112, 110, 110);
+    color:black;
+    font-size: 20px;
+}
+#blue{
+    background-color: rgb(61, 61, 199);
+    color: black;
+    font-size:20px;
+}
