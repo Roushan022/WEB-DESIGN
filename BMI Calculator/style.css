@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(149, 138, 138);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#head{
+display: flex;
+align-items: center;
+justify-content: center;
+color: yellowgreen;
+}
+.inp{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: auto;
+    border:2px solid yellow;
+    border-radius: 3px;
+}
+#sub{
+    font-size: 15px;
+    cursor: pointer;
+}
+#sub:hover{
+background-color: aquamarine;
+font-size: 16px;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #2b3737;
+}
+.result{
+        display: none;
+      
+}
