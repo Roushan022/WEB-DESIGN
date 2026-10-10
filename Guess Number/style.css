@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(87, 41, 41);
+}
+.heading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+}
+.main_box{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+    color: rgb(222, 164, 88);
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    padding: 4px;
+    border: 2px solid red;
+    border-radius: 5px;
+    
+}
+#input_num{
+ font-size:18px;
+ border: 2px red solid;
+ border-radius: 4px;
+ text-align: center;
+}
+#sub{
+font-size:18px;
+ border: 2px red solid;
+ border-radius: 4px;
+ color:black;
+ background-color: rgb(208, 165, 113);
+cursor: pointer;
+}
+#sub:hover{
+    font-size: 20px;
+    color: rgb(72, 72, 157);
+}
+.info{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color:rgb(39, 132, 154);
+}
