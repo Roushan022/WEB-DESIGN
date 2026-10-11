@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO COLOUR CHANGE</title>
+    <style>
+        body{
+        margin: auto;
+        justify-content: center;
+         align-items: center; 
+         display: flex; 
+        flex-direction: column;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Click start to see Magic</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+
+    <script>
+        const start=document.querySelector(".start");
+        const stop=document.querySelector(".stop");
+        hexNum="012456789ABCDEF";
+        let Interval;
+        function startFunction(){
+        Interval=setInterval(function(){
+            color="#";
+            for(let i=0;i<6;i++){
+            color+=hexNum[Math.floor(Math.random()*16)];
+        };
+        document.querySelector('body').style.backgroundColor=color;
+        },1000);
+        }; 
+        function stopFunction(){
+            clearInterval(Interval);
+            
+        };
+        start.addEventListener("click",()=>{
+            startFunction();
+        });
+        stop.addEventListener("click",()=>{
+            stopFunction();
+        });
+    </script>
+</body>
+</html>
