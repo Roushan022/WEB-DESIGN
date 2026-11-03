@@ -1,0 +1,43 @@
+body{
+    background-color: yellow;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+.main-content{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: solid rgb(229, 215, 215) 3px;
+    border-radius: 3px;
+}
+#heading{
+    margin: top 15px; 
+    margin-left: 50px;
+    padding: 10px;
+}
+#submit{
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 40%;
+}
+#score-text{
+    margin: top 0px;
+    margin-left: 320px;
+}
+#txt-input{
+    margin-left:20% ;
+    font-size: large;
+}
+.credit {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  font-size: 14px;
+  color: #666;
+}
+#Result{
+    margin-left: 43%;;
+}
