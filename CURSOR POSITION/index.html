@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 255, 0.826);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            display: flex;
+            align-items: center; 
+             justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+            margin-inline: 40px;
+            width: 128px;
+            height: 90px;
+            border-radius: 3px;
+            background-color:rgba(61, 61, 170, 0.667) ;
+            box-shadow: rgba(0,0,0,0.5);
+        }
+        .value{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"><p>Mouse X-position</p>
+    <span class="value" ><span id="x-axis"></span></div>
+    <div class="box"><p>Mouse Y-position</p>
+    <span class="value" id="y-axis"></span></div>
+    <script>
+        document.addEventListener("mousemove",(event)=>{
+            document.querySelector("#x-axis").textContent=event.clientX;
+            document.querySelector("#y-axis").textContent=event.clientY;
+
+        })
+    </script>
+</body>
+</html>
