@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <style>
+      body{
+        background:#0b1020;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+      }
+      .card{
+       width:140px;
+       height:220px;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       position:relative; 
+       overflow:hidden;
+       border-radius:10px;
+      }
+      p{
+        color:white;
+        font-size:20px;
+        z-index:1;
+      }
+      .card::before{
+        content:"";
+        position: absolute;
+        width:100px;
+        height:120%;
+        background:linear-gradient(180deg,red,blue);
+        border-radius:10px;
+        animation: roushan 3s linear infinite;
+      }
+      @keyframes roushan{
+        from{
+          transform:rotate(0deg);
+        }to{
+          transform:rotate(360deg);
+        }
+      }
+      .card::after{
+        content:"";
+             background:#07182E;
+             inset:3px;
+             position:absolute;
+             border-radius:12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <p>I am a box</p>
+    </div>
+  </body>
+</html>
